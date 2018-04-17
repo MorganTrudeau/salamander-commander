@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
+import scLogoWhite from '../images/scLogoWhite.png';
+import Header from './header';
 
 var Navbar = require('react-bootstrap/lib/Navbar');
 var Nav = require('react-bootstrap/lib/Nav');
