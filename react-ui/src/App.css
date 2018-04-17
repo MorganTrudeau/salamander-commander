@@ -1,28 +1,928 @@
-.App {
-  text-align: center;
+.button {
+  border-color: white;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.button:hover {
+  border-color: white;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.title {
+  font-size: 18px;
+  color: dimgrey;
+  letter-spacing: 1px;
+}
+
+.pageHeader {
+  background-color: #262626;
+  padding: 120px 3% 100px 3%;
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+.pageHeader .p1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 200;
 }
 
-.App a {
-  color: #f60;
+.pageHeader .p2 {
+  margin: 20px;
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: #b780ff;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.pageHeader .button {
+  width: 250px;
+  height: 70px;
+  font-size: 25px;
+  margin-top: 40px;
+  border-width: 4px;
+  border-color: #8000ff;
+  background-color: #262626;
+  color: #b780ff;
+}
+
+.mark0 {
+  height: 40px;
+  position: sticky;
+  top: 0;
+}
+
+/*
+  Header
+*/
+
+.header {
+  width: 100%;
+  height: 80px;
+  padding-top: 20px;
+  text-align: center;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(
+    left,
+    #8000ff,
+    #b633ff
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    right,
+    #8000ff,
+    #b633ff
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    right,
+    #8000ff,
+    #b633ff
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #8000ff, #b633ff); /* Standard syntax */
+}
+
+.headerLogo {
+  margin-top: ;
+}
+
+/*
+  Navbar
+*/
+
+.nav {
+  position: sticky;
+  top: 0;
+}
+
+.navLogo {
+  margin-top: 13px;
+  margin-left: 23px;
+  height: 25px;
+  float: left;
+  display: none;
+  transition: visibility 0s, opacity 0.2s linear;
+}
+
+.navbar {
+  background-color: #4d4d4d;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 0px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+}
+
+.navbar .navbar-nav > li > a {
+  color: #f2f2f2;
+  width: 140px;
+  height: 100%;
+  font-size: 16px;
+  font-family: Arial;
+  letter-spacing: 3px;
+  margin-bottom: 0px;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.navbar .navbar-nav > li > a:hover {
+  background-color: #404040;
+}
+
+.navbar .navbar-toggle {
+  background-color: #4d4d4d;
+}
+
+.navbar .navbar-toggle:focus {
+  background-color: #4d4d4d;
+}
+
+.navbar .navbar-toggle:hover {
+  background-color: #404040;
+}
+
+.navItems {
+  display: inline-block;
+}
+
+/*
+  Home
+*/
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home {
+  background-size: 130%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Montserrat, arial, sans-serif;
+}
+
+.homeCell0 {
+  width: 100%;
+  text-align: center;
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.homeCell0 p {
+  font-weight: 600;
+  font-size: 35px;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+
+.homeCell0 .button {
+  background-color: rgba(77, 77, 77, 0.3);
+  border-width: 6px;
+  border-color: white;
+  width: 640px;
+  height: 100px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.homeCell0 .button:hover {
+  background-color: rgba(128, 0, 255, 0.5);
+}
+
+.homeHeader {
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.headerCell0 {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #8000ff;
+  letter-spacing: 3px;
+}
+
+.headerCell1 {
+  border-right: solid;
+  border-color: #e6ccff;
+  width: 33%;
+  display: table-cell;
+  text-align: center;
+  font-size: 14px;
+  padding: 0px 20px 0px 20px;
+}
+
+.headerCell2 {
+  border-right: solid;
+  border-color: #e6ccff;
+  width: 33%;
+  display: table-cell;
+  text-align: center;
+  font-size: 14px;
+  padding: 0px 20px 0px 20px;
+}
+
+.headerCell3 {
+  display: table-cell;
+  text-align: center;
+  width: 33%;
+  font-size: 14px;
+  padding: 0px 20px 0px 20px;
+}
+
+.headerCell4 {
+  text-align: center;
+  padding: 40px 10px 40px 10px;
+}
+
+.headerCell4 .button1 {
+  font-size: 18px;
+  width: 180px;
+  height: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 10px;
+  background-color: #8000ff;
+  border-color: #8000ff;
+  border-width: 3px;
+  color: white;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.headerCell4 .button1:hover {
+  background-color: white;
+  color: #8000ff;
+}
+
+.headerCell4 .button2 {
+  font-size: 18px;
+  width: 220px;
+  height: 50px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  background-color: #9b00ff;
+  border-color: #9b00ff;
+  border-width: 2px;
+  margin: 10px;
+  color: white;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.headerCell4 .button2:hover {
+  background-color: white;
+  color: #9b00ff;
+}
+
+.headerCell4 .button3 {
+  margin: 10px;
+  font-size: 18px;
+  width: 180px;
+  height: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  background-color: #b600ff;
+  border-color: #b600ff;
+  border-width: 3px;
+  color: white;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.headerCell4 .button3:hover {
+  background-color: white;
+  color: #b600ff;
+}
+
+.homeCell2 {
+  background-color: #262626;
+  padding: 10% 3% 10% 3%;
+  color: white;
+  text-align: center;
+}
+
+.homeCell2 p {
+  font-weight: 600;
+  font-size: 45px;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+}
+
+.homeCell2 .p2 {
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.homeCell2-1 {
+  padding: 40px 0px;
+  text-align: center;
+  background-color: #e8e8e8;
+}
+
+.homeCell2-1 img {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.homeCell3 {
+  padding: 50px 0px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  font-size: 35px;
+  color: #8000ff;
+  letter-spacing: 1px;
+}
+
+.header4 {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.homeCell4 .textBlock {
+  margin: 0px 10px 0px 10px;
+}
+
+.homeCell4 .button {
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 2px;
+}
+
+.homeCell4-1 {
+  background-color: #6700ff;
+  color: white;
+  display: table-cell;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.homeCell4-1 .button:hover {
+  color: #6700ff;
+  background-color: white;
+}
+
+.homeCell4-2 {
+  background-color: #8000ff;
+  color: white;
+  display: table-cell;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.homeCell4-2 .button:hover {
+  color: #8000ff;
+  background-color: white;
+}
+
+.homeCell4-3 {
+  background-color: #9b00ff;
+  color: white;
+  display: table-cell;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.homeCell4-3 .button:hover {
+  color: #8000ff;
+  background-color: white;
+}
+
+.homeCell4-4 {
+  background-color: #b600ff;
+  color: white;
+  display: table-cell;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.homeCell4-4 .button:hover {
+  color: #8000ff;
+  background-color: white;
+}
+
+.homeCell4 .button {
+  margin: 0px;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 0px 50px 0px;
+}
+
+.gridCol {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
+}
+
+/*
+  About
+*/
+
+.about {
+  text-align: center;
+}
+
+.aboutCell0 {
+  background-color: white;
+  display: none;
+}
+
+/*
+  Services
+*/
+
+.services {
+  text-align: center;
+}
+
+.servicesCells {
+  padding: 0px 10% 0px 10%;
+  background-color: white;
+}
+
+.servicesCells .icon {
+  float: left;
+  margin-right: 40px;
+}
+
+.servicesCells .title {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.servicesCells .textBlock {
+  margin-left: 15%;
+}
+
+.servicesCell {
+  padding: 80px 10% 80px 0px;
+  background-color: white;
+  border-bottom: solid;
+  border-color: silver;
+  border-width: 2px;
+}
+
+.servicesCell1 {
+  padding: 80px 10% 80px 0px;
+  background-color: white;
+}
+
+/*
+  Projects
+*/
+
+.projects {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.projectButtons {
+  padding: 3%;
+  background-color: black;
+}
+
+.projects .button {
+  background-color: black;
+  color: #ffffff;
+  border-color: #ffffff;
+  font-size: 18px;
+}
+
+.projects .button:first-child {
+  margin-right: 10px;
+}
+
+.hsmWeb {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0px 10px 30px 0px #888888;
+  text-align: center;
+}
+
+.lynxWeb {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0px 10px 30px 0px #888888;
+  text-align: center;
+}
+
+/*
+.lynxWeb .text {
+  position: absolute;
+  color: white;
+  width: 100%;
+  top: 50%;
+}
+
+.lynxWeb .lynxButton {
+  letter-spacing: 3px;
+  color: white;
+  border: solid;
+  border-color: white;
+  border-radius: 10px;
+  width: 250px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  top: 56%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.lynxWeb:hover img {
+  opacity: 0.5;
+}
+*/
+
+/*
+  Contact
+*/
+
+.contact {
+  text-align: center;
+  font-family: Montserrat, arial, sans-serif;
+}
+
+.contactHeader {
+  background-color: #ffffff;
+}
+
+.contactInfo {
+  color: dimgrey;
+  padding: 50px 0px 50px 0px;
+  background-color: #ffffff;
+  font-size: 22px;
+  width: 100%;
+  display: table;
+}
+
+.email {
+  display: table-cell;
+}
+
+.phone {
+  display: table-cell;
+}
+
+.phone img {
+  margin-bottom: 18px;
+}
+
+.location {
+  display: table-cell;
+}
+
+.location img {
+  margin-bottom: 16px;
+}
+
+.messageWrapper {
+  background: url("./images/pixels.jpeg") no-repeat top center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.messageFormHeader {
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  padding: 50px 5% 50px 5%;
+  font-weight: 400;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.messageForm {
+  padding: 30px;
+  background-color: white;
+}
+
+.form {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+
+.messageList {
+  text-align: left;
+  width: 370px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.nameInput {
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.emailInput {
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.textArea {
+  margin-bottom: 20px;
+  height: 300px;
+}
+
+.button {
+  background-color: #8000ff;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #9933ff;
+  color: #ffffff;
+}
+
+.button:focus {
+  background-color: #8000ff;
+  color: #ffffff;
+}
+
+.btn:active:focus {
+  background-color: #9933ff;
+  color: #ffffff;
+}
+
+/*
+  Footer
+*/
+
+.footer {
+  padding: 40px;
+  text-align: center;
+}
+
+.footer p {
+  letter-spacing: 1px;
+  text-align: center;
+  color: grey;
+  margin: 5px;
+}
+
+.footImg p {
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .homeHeader .headerCell1 {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: solid;
+    border-color: #e6ccff;
+    padding-bottom: 20px;
+  }
+
+  .homeHeader .headerCell2 {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: solid;
+    border-color: #e6ccff;
+    padding-bottom: 20px;
+  }
+
+  .homeHeader .headerCell3 {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 431px) {
+  .messageFormHeader p {
+    font-size: 9vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .homeCell0 {
+    width: 100%;
+    text-align: center;
+    padding: 60px 5px 60px 5px;
+  }
+
+  .homeCell0 p {
+    font-weight: 600;
+    font-size: 4vw;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+
+  .homeCell0 .button {
+    border-width: 4px;
+    width: 85%;
+    font-size: 4.7vw;
+    padding: 10px 10px 10px 10px;
+    height: 20%;
+  }
+
+  .pageHeader .button {
+    width: 218px;
+  }
+
+  .pageHeader .p1 {
+    font-size: 7.5vw;
+  }
+
+  .pageHeader .p2 {
+    font-size: 5vw;
+  }
+
+  .servicesCell {
+    padding: 30px 10% 30px 10%;
+    background-color: white;
+    border-bottom: solid;
+    border-color: silver;
+    border-width: 2px;
+    text-align: center;
+  }
+
+  .servicesCell1 {
+    padding: 30px 10% 30px 10%;
+    background-color: white;
+    text-align: center;
+  }
+
+  .servicesCells .icon {
+    margin-bottom: 15px;
+  }
+
+  .homeCell3 {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 620px) and (min-width: 550px) {
+  .pageHeader .p1 {
+    font-size: 7.5vw;
+  }
+
+  .pageHeader .button {
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .servicesCell {
+    padding: 30px 10% 30px 10%;
+    background-color: white;
+    border-bottom: solid;
+    border-color: silver;
+    border-width: 2px;
+    text-align: center;
+  }
+
+  .servicesCell1 {
+    padding: 30px 10% 30px 10%;
+    background-color: white;
+    text-align: center;
+  }
+
+  .servicesCells .icon {
+    margin-bottom: 15px;
+    float: none;
+    margin-right: 0px;
+  }
+
+  .servicesCells .textBlock {
+    margin-left: 7%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .email {
+    margin-right: 0%;
+    margin-bottom: 50px;
+    display: block;
+  }
+
+  .phone {
+    margin-right: 0%;
+    margin-bottom: 50px;
+    display: block;
+  }
+
+  .location {
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  .navLogo {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 788px) {
+  .homeCell2 {
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+
+  .homeCell2 p {
+    font-size: 6vw;
+  }
+
+  .homeCell2 .p2 {
+    font-size: 8vw;
+  }
+}
+
+@media only screen and (max-width: 863px) and (min-width: 550px) {
+  .homeCell0 {
+    width: 100%;
+    text-align: center;
+    padding: 60px 5px 60px 5px;
+  }
+
+  .homeCell0 p {
+    font-weight: 600;
+    font-size: 4vw;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+
+  .homeCell0 .button {
+    border-width: 4px;
+    width: 75%;
+    height: 100%;
+    font-size: 4vw;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form {
+    width: 750px;
+  }
+
+  .homeCell4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.homeCell2-enter {
+  opacity: 0.01;
+}
+
+.homeCell2-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.homeCell2-leave {
+  opacity: 1;
+}
+
+.homeCell2-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
