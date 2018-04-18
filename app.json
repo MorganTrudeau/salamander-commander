@@ -1,6 +1,6 @@
 {
-  "name": "heroku-cra-node",
-  "description": "web app made of create-react-app UI + Node API",
+  "name": "salamander-commander",
+  "description": "Salamander Commander Web Design",
   "scripts": {
   },
   "env": {
