@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
-import { CSSTransitionGroup } from "react-transition-group";
 import platforms from "../images/platforms.png";
 import stars from "../images/background.jpg";
 
@@ -12,7 +11,10 @@ class Home extends Component {
 		return (
 			<div>
 				<div className="home">
-					<div className="homeCell0 parallax" style={{ backgroundImage: `url(${stars})` }}>
+					<div
+						className="homeCell0 parallax"
+						style={{ backgroundImage: `url(${stars})` }}
+					>
 						<p>Developing beautiful, responsive websites</p>
 						<p>with the power of React.</p>
 						<Link to="/contact">
@@ -81,7 +83,7 @@ class Home extends Component {
 						</Link>
 					</div>
 				</div>
-				
+
 				<div className="homeCell2">
 					<p className="p1">OWN A WEBSITE THAT</p>
 					<p className="p2">COMMANDS ATTENTION</p>

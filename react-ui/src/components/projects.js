@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
-import lynxWeb from "../images/lynxWeb.png";
-import hsmWeb from "../images/hsmWeb.png";
+import lynxWeb from "../images/lynxWeb.jpg";
+import hsmWeb from "../images/hsmWeb.jpg";
 
 var Button = require("react-bootstrap/lib/Button");
 
