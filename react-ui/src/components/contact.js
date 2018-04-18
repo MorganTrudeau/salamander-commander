@@ -61,15 +61,15 @@ class Contact extends Component {
 					<div className="contactHeader" />
 					<div className="contactInfo">
 						<div className="email">
-							<img src={emailIcon} height="100px" alt="" />
+							<img src={emailIcon} height="70px" alt="" />
 							<p>salcomweb@gmail.com</p>
 						</div>
 						<div className="phone">
-							<img src={phoneIcon} height="100px" alt="" />
+							<img src={phoneIcon} height="70px" alt="" />
 							<p>778-808-9036</p>
 						</div>
 						<div className="location">
-							<img src={pinIcon} height="100px" alt="" />
+							<img src={pinIcon} height="70px" alt="" />
 							<p>Langley, BC, Canada</p>
 						</div>
 					</div>
