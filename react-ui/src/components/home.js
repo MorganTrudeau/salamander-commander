@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
-import platforms from "../images/platforms.png";
-import stars from "../images/background.jpg";
+import platforms from "../images/salamander-commander-website-design-platforms.png";
+import stars from "../images/salamander-commander-website-design-stars.jpg";
 
 var Button = require("react-bootstrap/lib/Button");
 
@@ -93,7 +93,7 @@ class Home extends Component {
 					<img
 						src={platforms}
 						width="100%"
-						alt="iphone mac tablet computer platforms website design"
+						alt="salamander-commander-website-design-platforms"
 					/>
 				</div>
 

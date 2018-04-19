@@ -612,7 +612,8 @@
 }
 
 .messageWrapper {
-  background: url("./images/pixels.jpeg") no-repeat top center fixed;
+  background: url("./images/salamander-commander-website-design-pixels.jpeg")
+    no-repeat top center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;

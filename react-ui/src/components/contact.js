@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "../App.css";
-import emailIcon from "../images/emailIcon.png";
-import phoneIcon from "../images/phoneIcon.png";
-import pinIcon from "../images/pinIcon.png";
+import emailIcon from "../images/salamander-commander-website-design-email.png";
+import phoneIcon from "../images/salamander-commander-website-design-phone.png";
+import pinIcon from "../images/salamander-commander-website-design-location.png";
 
 var FormControl = require("react-bootstrap/lib/FormControl");
 var Button = require("react-bootstrap/lib/Button");
@@ -61,15 +61,27 @@ class Contact extends Component {
 					<div className="contactHeader" />
 					<div className="contactInfo">
 						<div className="email">
-							<img src={emailIcon} height="80px" alt="" />
+							<img
+								src={emailIcon}
+								height="80px"
+								alt="salamander-commander-website-design-email"
+							/>
 							<p>salcomweb@gmail.com</p>
 						</div>
 						<div className="phone">
-							<img src={phoneIcon} height="80px" alt="" />
+							<img
+								src={phoneIcon}
+								height="80px"
+								alt="salamander-commander-website-design-phone"
+							/>
 							<p>778-808-9036</p>
 						</div>
 						<div className="location">
-							<img src={pinIcon} height="80px" alt="" />
+							<img
+								src={pinIcon}
+								height="80px"
+								alt="salamander-commander-website-design-location"
+							/>
 							<p>Langley, BC, Canada</p>
 						</div>
 					</div>

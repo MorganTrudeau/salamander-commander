@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
-import lynxWeb from "../images/lynxWeb.jpg";
-import hsmWeb from "../images/hsmWeb.jpg";
+import lynxWeb from "../images/salamander-commander-website-design-project-lynx.jpg";
+import hsmWeb from "../images/salamander-commander-website-design-project-hsm.jpg";
 
 var Button = require("react-bootstrap/lib/Button");
 
@@ -25,7 +25,7 @@ class Projects extends Component {
 						<img
 							src={hsmWeb}
 							width="100%"
-							alt="harbourview sheetmetal"
+							alt="salamander-commander-website-design-project-lynx"
 						/>
 						<div className="projectButtons">
 							<Button className="button" type="submit">
@@ -41,7 +41,7 @@ class Projects extends Component {
 						<img
 							src={lynxWeb}
 							width="100%"
-							alt="lynx landscaping"
+							alt="salamander-commander-website-design-project-lynx"
 						/>
 						<div className="projectButtons">
 							<Button className="button" type="submit">

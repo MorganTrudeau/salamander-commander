@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
-import reactLogo from "../images/react.png";
+import reactLogo from "../images/salamander-commander-ecommerce-website-design-react.png";
 
 var Button = require("react-bootstrap/lib/Button");
 
@@ -24,7 +24,7 @@ class About extends Component {
 						<img
 							src={reactLogo}
 							height="80px"
-							alt="react javascript website"
+							alt="salamander-commander-ecommerce-website-design-react"
 						/>
 						<p>Powered by React</p>
 					</div>

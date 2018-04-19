@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "../App.css";
-import phoneIconGrey from "../images/phoneIconGrey.png";
-import googleIcon from "../images/googleIcon.png";
-import artIcon from "../images/artIcon.png";
-import cameraIcon from "../images/cameraIcon.png";
-import storeIcon from "../images/storeIcon.png";
+import phoneIconGrey from "../images/salamander-commander-responsive-web-design.png";
+import googleIcon from "../images/salamander-commander-seo-search-engine-optimization.png";
+import artIcon from "../images/salamander-commander-website-design-logo.png";
+import cameraIcon from "../images/salamander-commander-website-design-professional-photography.png";
+import storeIcon from "../images/salamander-commander-ecommerce-website-design-development.png";
 
 class Services extends Component {
 	componentWillMount() {
@@ -25,7 +25,7 @@ class Services extends Component {
 								<img
 									src={phoneIconGrey}
 									height="60px"
-									alt="phone mobile"
+									alt="salamander-commander-responsive-web-design"
 								/>
 							</div>
 							<div className="title">
@@ -45,7 +45,7 @@ class Services extends Component {
 								<img
 									src={storeIcon}
 									height="60px"
-									alt="ecommerce store"
+									alt="salamander-commander-ecommerce-website-design-development"
 								/>
 							</div>
 							<div className="title">
@@ -65,7 +65,7 @@ class Services extends Component {
 								<img
 									src={googleIcon}
 									height="60px"
-									alt="google search engine optimization"
+									alt="salamander-commander-seo-search-engine-optimization"
 								/>
 							</div>
 							<div className="title">
@@ -85,7 +85,7 @@ class Services extends Component {
 								<img
 									src={artIcon}
 									height="60px"
-									alt="art logo design"
+									alt="salamander-commander-website-design-logo"
 								/>
 							</div>
 							<div className="title">
@@ -105,7 +105,7 @@ class Services extends Component {
 								<img
 									src={cameraIcon}
 									height="60px"
-									alt="photography"
+									alt="salamander-commander-website-design-professional-photography"
 								/>
 							</div>
 							<div className="title">
