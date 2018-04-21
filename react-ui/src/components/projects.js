@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "../App.css";
-import lynxWeb from "../images/salamander-commander-website-design-project-lynx.jpg";
-import hsmWeb from "../images/salamander-commander-website-design-project-hsm.jpg";
+import { Link } from "react-router-dom";
+import lynxWeb from "../images/salamander-commander-website-design-projects-construction-1.png";
+import hsmWeb from "../images/salamander-commander-website-design-projects-construction-2.png";
+import dlm from "../images/salamander-commander-website-design-projects-construction-0.png";
 
 var Button = require("react-bootstrap/lib/Button");
 
@@ -21,34 +23,41 @@ class Projects extends Component {
 						</p>
 					</div>
 
-					<div className="hsmWeb">
-						<img
-							src={hsmWeb}
-							width="100%"
-							alt="salamander-commander-website-design-project-lynx"
-						/>
-						<div className="projectButtons">
-							<Button className="button" type="submit">
-								View Project
-							</Button>
-							<Button className="button" type="submit">
-								View Site
-							</Button>
-						</div>
-					</div>
-
-					<div className="lynxWeb">
+					<div className="web">
 						<img
 							src={lynxWeb}
 							width="100%"
-							alt="salamander-commander-website-design-project-lynx"
+							alt="salamander-commander-website-design-projects-construction"
 						/>
 						<div className="projectButtons">
-							<Button className="button" type="submit">
-								View Project
-							</Button>
-							<Button className="button" type="submit">
-								View Site
+							<a href="https://lynx-landscaping.herokuapp.com/">
+								<Button className="button">View Site</Button>
+							</a>
+						</div>
+					</div>
+
+					<div className="web">
+						<img
+							src={dlm}
+							width="100%"
+							alt="salamander-commander-website-design-projects-construction"
+						/>
+						<div className="projectButtons">
+							<a href="https://duradek-lower-mainland.herokuapp.com/">
+								<Button className="button">View Site</Button>
+							</a>
+						</div>
+					</div>
+
+					<div className="web">
+						<img
+							src={hsmWeb}
+							width="100%"
+							alt="salamander-commander-website-design-projects-construction"
+						/>
+						<div className="projectButtons">
+							<Button className="button">
+								UNDER CONSTRUCTION
 							</Button>
 						</div>
 					</div>

@@ -26,6 +26,14 @@ function sendEmail(name, email, message) {
 	}
 }
 
+function validateForm(name, email) {
+	if (name.trim() !== "" && email.trim() !== "") {
+		return true;
+	} else {
+		return false;
+	}
+}
+
 class Contact extends Component {
 	constructor(props) {
 		super(props);
@@ -49,9 +57,10 @@ class Contact extends Component {
 		const email = this.state.email;
 		const message = this.state.message;
 
-		alert("Thank you. We will respond as soon as possible");
-
-		sendEmail(name, email, message);
+		if (validateForm(name, email)) {
+			alert("Thank you. We will respond as soon as possible");
+			sendEmail(name, email, message);
+		}
 	}
 
 	render() {

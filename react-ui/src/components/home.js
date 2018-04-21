@@ -7,6 +7,10 @@ import stars from "../images/salamander-commander-website-design-stars.jpg";
 var Button = require("react-bootstrap/lib/Button");
 
 class Home extends Component {
+	componentWillMount() {
+		window.scrollTo(0, 0);
+	}
+
 	render() {
 		return (
 			<div>
