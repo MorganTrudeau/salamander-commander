@@ -16,7 +16,9 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.14.1",
-    "nodemailer": "^4.6.4"
+    "nodemailer": "^4.6.4",
+    "prerender-node": "^3.1.1",
+    "react-helmet": "^5.2.0"
   },
   "repository": {
     "type": "git",

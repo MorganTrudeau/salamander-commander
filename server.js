@@ -4,6 +4,10 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
+app.use(
+	require("prerender-node").set("prerenderToken", "3zmHynW14xC8BKv7P7v6")
+);
+
 // Routes
 const emailRoute = require("./routes/email");
 
