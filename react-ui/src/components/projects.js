@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import HelmetWrapper from "./HelmetWrapper";
 import "../App.css";
-import { Link } from "react-router-dom";
 import lynxWeb from "../images/salamander-commander-website-design-projects-construction-1.png";
 import hsmWeb from "../images/salamander-commander-website-design-projects-construction-2.png";
 import dlm from "../images/salamander-commander-website-design-projects-construction-0.png";
@@ -15,11 +15,19 @@ class Projects extends Component {
 	render() {
 		return (
 			<div>
+				<HelmetWrapper
+					title={
+						"Salamander Commander Web Design and Development - Projects"
+					}
+					description={
+						"Profit from online customers with an effective website designed by Salamander Commander. Check out our work."
+					}
+				/>
 				<div className="projects">
 					<div className="pageHeader">
 						<p className="p1">Make a good first impression.</p>
 						<p className="p2">
-							Let our beautiful web designs help you.
+							Let our powerful web designs help you.
 						</p>
 					</div>
 
@@ -43,9 +51,9 @@ class Projects extends Component {
 							alt="salamander-commander-website-design-projects-construction"
 						/>
 						<div className="projectButtons">
-							<a href="https://duradek-lower-mainland.herokuapp.com/">
-								<Button className="button">View Site</Button>
-							</a>
+							<Button className="button">
+								Under Construction
+							</Button>
 						</div>
 					</div>
 
@@ -57,7 +65,7 @@ class Projects extends Component {
 						/>
 						<div className="projectButtons">
 							<Button className="button">
-								UNDER CONSTRUCTION
+								Under Construction
 							</Button>
 						</div>
 					</div>

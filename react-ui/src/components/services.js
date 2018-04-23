@@ -1,10 +1,10 @@
 import React, { Component } from "react";
+import HelmetWrapper from "./HelmetWrapper";
 import "../App.css";
 import phoneIconGrey from "../images/salamander-commander-responsive-web-design.png";
 import googleIcon from "../images/salamander-commander-seo-search-engine-optimization.png";
-import artIcon from "../images/salamander-commander-website-design-logo.png";
 import cameraIcon from "../images/salamander-commander-website-design-professional-photography.png";
-import storeIcon from "../images/salamander-commander-ecommerce-website-design-development.png";
+import react from "../images/salamander-commander-ecommerce-website-design-react.png";
 
 class Services extends Component {
 	componentWillMount() {
@@ -14,11 +14,22 @@ class Services extends Component {
 	render() {
 		return (
 			<div>
+				<HelmetWrapper
+					title={
+						"Salamander Commander Web Design and Development - Services"
+					}
+					description={
+						"Our process ensures you receive a powerful and effective website. See how we can help you generate online business."
+					}
+				/>
 				<div className="services">
 					<div className="pageHeader">
 						<p className="p1">Don't settle for just a website.</p>
 						<p className="p2">We offer the whole package.</p>
 					</div>
+
+					<div className="cell0" />
+
 					<div className="servicesCells">
 						<div className="servicesCell">
 							<div className="icon">
@@ -33,9 +44,12 @@ class Services extends Component {
 							</div>
 							<div className="textBlock">
 								<p>
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Integerodio. Praesent
-									libero.
+									A new approach to web design which makes web
+									pages render well on a variety of devices
+									and window or screen sizes. Content, design
+									and performance are necessary across all
+									devices to ensure usability and
+									satisfaction.
 								</p>
 							</div>
 						</div>
@@ -43,19 +57,23 @@ class Services extends Component {
 						<div className="servicesCell">
 							<div className="icon">
 								<img
-									src={storeIcon}
+									src={react}
 									height="60px"
-									alt="salamander-commander-ecommerce-website-design-development"
+									alt="salamander-commander-seo-search-engine-optimization"
 								/>
 							</div>
 							<div className="title">
-								<p>ECOMMERCE STORES</p>
+								<p>SINGLE PAGE APPLICATIONS</p>
 							</div>
 							<div className="textBlock">
 								<p>
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Integer nec odio. Praesent
-									libero.
+									The fastest websites on the internet. We
+									develop Single Page Applications using a
+									language called React developed by Facebook.
+									This allows us to build websites that change
+									content without loading new pages. Faster
+									navigation results in a more enjoyable user
+									experience.
 								</p>
 							</div>
 						</div>
@@ -69,33 +87,15 @@ class Services extends Component {
 								/>
 							</div>
 							<div className="title">
-								<p>SEACRH ENGINE OPTIMIZATION</p>
+								<p>SEARCH ENGINE OPTIMIZATION</p>
 							</div>
 							<div className="textBlock">
 								<p>
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Integer nec odio. Praesent
-									libero.
-								</p>
-							</div>
-						</div>
-
-						<div className="servicesCell">
-							<div className="icon">
-								<img
-									src={artIcon}
-									height="60px"
-									alt="salamander-commander-website-design-logo"
-								/>
-							</div>
-							<div className="title">
-								<p>LOGO DESIGN</p>
-							</div>
-							<div className="textBlock">
-								<p>
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Integer nec odio. Praesent
-									libero.
+									SEO gets your website seen on search engine
+									results. This increases traffic and
+									potential business. Every website we design
+									is fully compatible with the top search
+									engines inlcuding Google, Bing and Yahoo.
 								</p>
 							</div>
 						</div>
@@ -113,9 +113,11 @@ class Services extends Component {
 							</div>
 							<div className="textBlock">
 								<p>
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit. Integer nec odio. Praesent
-									libero.
+									Using professional photography results in
+									visually compelling websites that grab a
+									users attetion. We provide original, high
+									quality photos to make your website stand
+									out.
 								</p>
 							</div>
 						</div>
@@ -127,3 +129,41 @@ class Services extends Component {
 }
 
 export default Services;
+
+/*<div className="servicesCell">
+	<div className="icon">
+		<img
+			src={storeIcon}
+			height="60px"
+			alt="salamander-commander-ecommerce-website-design-development"
+		/>
+	</div>
+	<div className="title">
+		<p>ECOMMERCE STORES</p>
+	</div>
+	<div className="textBlock">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+			odio. Praesent libero.
+		</p>
+	</div>
+</div>*/
+
+/*<div className="servicesCell">
+	<div className="icon">
+		<img
+			src={artIcon}
+			height="60px"
+			alt="salamander-commander-website-design-logo"
+		/>
+	</div>
+	<div className="title">
+		<p>LOGO DESIGN</p>
+	</div>
+	<div className="textBlock">
+		<p>
+			Our talented graphic designers can provide you with customized logos
+			to
+		</p>
+	</div>
+</div>;*/

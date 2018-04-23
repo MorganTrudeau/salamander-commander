@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import HelmetWrapper from "./HelmetWrapper";
 import "../App.css";
 import { Link } from "react-router-dom";
 import platforms from "../images/salamander-commander-website-design-platforms.png";
@@ -14,18 +15,26 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
+				<HelmetWrapper
+					title={"Salamander Commander Web Design and Development"}
+					description={
+						"Web Design & Development for the Vancouver area. Responsive Websites, E-Commerce, and Logos. Get A Quote!"
+					}
+				/>
 				<div className="home">
 					<div
 						className="homeCell0 parallax"
 						style={{ backgroundImage: `url(${stars})` }}
 					>
-						<p>Developing beautiful, responsive websites</p>
-						<p>with the power of React.</p>
-						<Link to="/contact">
-							<Button className="button">
-								START YOUR WEBSITE
-							</Button>
-						</Link>
+						<div className="smoke">
+							<h1>Building websites</h1>
+							<h2>that build businesses.</h2>
+							<Link to="/contact">
+								<Button className="button">
+									LET'S GET STARTED
+								</Button>
+							</Link>
+						</div>
 					</div>
 				</div>
 				<div className="homeHeader">
@@ -35,40 +44,39 @@ class Home extends Component {
 
 					<div className="headerCell1">
 						<div className="title">
-							<h3>Appealing</h3>
+							<h6>SEO Friendly</h6>
 						</div>
 						<div className="textBlock">
 							<p>
-								We choose designs that target your audience to
-								maximize user experience and portray the face of
-								your business as it should be.
+								Search Engine Optimization maximizes visitors -
+								your website will rank high on Google search
+								results.
 							</p>
 						</div>
 					</div>
 
 					<div className="headerCell2">
 						<div className="title">
-							<h3>Responsive</h3>
+							<h6>Responsive</h6>
 						</div>
 						<div className="textBlock">
 							<p>
-								Responsive web design is critical with the
-								number of different devices on the market. We
-								build websites that look great on any device.
+								Responsive web design allows the layout of your
+								website to adapt to any device and screen size.
+								Ensure your website always looks good!
 							</p>
 						</div>
 					</div>
 
 					<div className="headerCell3">
 						<div className="title">
-							<h3>Effective</h3>
+							<h6>Compelling</h6>
 						</div>
 						<div className="textBlock">
 							<p>
-								Every website has a purpose and should be
-								designed to deliver results. Regardless of the
-								goal of your website we will make sure it gets
-								the job done.
+								High quality graphic design and text reflect the
+								unique excellence of your business and turn
+								visitors into customers.
 							</p>
 						</div>
 					</div>
@@ -89,8 +97,8 @@ class Home extends Component {
 				</div>
 
 				<div className="homeCell2">
-					<p className="p1">OWN A WEBSITE THAT</p>
-					<p className="p2">COMMANDS ATTENTION</p>
+					<p className="p1">WEBSITES THAT</p>
+					<p className="p2">COMMAND ATTENTION</p>
 				</div>
 
 				<div className="homeCell2-1">
@@ -108,7 +116,7 @@ class Home extends Component {
 				<div className="homeCell4">
 					<div className="homeCell4-1 gridCol">
 						<div className="header4">
-							<h3>SINGLE PAGE APPLICATIONS</h3>
+							<h4>SINGLE PAGE APPLICATIONS</h4>
 						</div>
 						<div className="textBlock">
 							<p>
@@ -125,7 +133,7 @@ class Home extends Component {
 
 					<div className="homeCell4-2 gridCol">
 						<div className="header4">
-							<h3>ECOMMERCE STORES</h3>
+							<h4>ECOMMERCE STORES</h4>
 						</div>
 						<div className="textBlock">
 							<p>
@@ -142,7 +150,7 @@ class Home extends Component {
 
 					<div className="homeCell4-3 gridCol">
 						<div className="header4">
-							<h3>LOGO DESIGN</h3>
+							<h4>LOGO DESIGN</h4>
 						</div>
 						<div className="textBlock">
 							<p>
@@ -159,7 +167,7 @@ class Home extends Component {
 
 					<div className="homeCell4-4 gridCol">
 						<div className="header4">
-							<h3>SEARCH ENGINE OPTIMIZATION</h3>
+							<h4>SEARCH ENGINE OPTIMIZATION</h4>
 						</div>
 						<div className="textBlock">
 							<p>

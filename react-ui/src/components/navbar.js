@@ -6,7 +6,7 @@ var Nav = require("react-bootstrap/lib/Nav");
 class NavbarInstance extends Component {
   render() {
     return (
-      <div className="nav" ref="nav">
+      <div>
         <Navbar collapse inverse collapseOnSelect fluid>
           <Navbar.Header>
             <Navbar.Toggle />

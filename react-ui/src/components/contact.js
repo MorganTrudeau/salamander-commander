@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import HelmetWrapper from "./HelmetWrapper";
 import "../App.css";
 import emailIcon from "../images/salamander-commander-website-design-email.png";
 import phoneIcon from "../images/salamander-commander-website-design-phone.png";
@@ -66,18 +67,23 @@ class Contact extends Component {
 	render() {
 		return (
 			<div>
+				<HelmetWrapper
+					title={"Salamander Commander Web Design - Contact Us"}
+					description={
+						"Interested in owning a website for your business? Contact us for a free quote."
+					}
+				/>
 				<div className="contact">
-					<div className="contactHeader" />
 					<div className="contactInfo">
-						<div className="email">
+						<div className="contactCell email">
 							<img
 								src={emailIcon}
 								height="80px"
 								alt="salamander-commander-website-design-email"
 							/>
-							<p>salcomweb@gmail.com</p>
+							<p>salcomwebdesign@gmail.com</p>
 						</div>
-						<div className="phone">
+						<div className="contactCell phone">
 							<img
 								src={phoneIcon}
 								height="80px"
@@ -85,7 +91,7 @@ class Contact extends Component {
 							/>
 							<p>778-808-9036</p>
 						</div>
-						<div className="location">
+						<div className="contactCell location">
 							<img
 								src={pinIcon}
 								height="80px"

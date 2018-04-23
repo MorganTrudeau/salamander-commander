@@ -15,7 +15,7 @@ class Footer extends Component {
           />
         </div>
         <p>778-808-9036</p>
-        <p>salcomdesigns@gmail.com</p>
+        <p>salcomwebdesign@gmail.com</p>
       </div>
     );
   }
