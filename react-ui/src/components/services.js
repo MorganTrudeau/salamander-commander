@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HelmetWrapper from "./HelmetWrapper";
+import { Helmet } from "react-helmet";
 import "../App.css";
 import phoneIconGrey from "../images/salamander-commander-responsive-web-design.png";
 import googleIcon from "../images/salamander-commander-seo-search-engine-optimization.png";
@@ -14,14 +14,7 @@ class Services extends Component {
 	render() {
 		return (
 			<div>
-				<HelmetWrapper
-					title={
-						"Salamander Commander Web Design and Development - Services"
-					}
-					description={
-						"Our process ensures you receive a powerful and effective website. See how we can help you generate online business."
-					}
-				/>
+				<Helmet title="Salamander Commander Web Design and Development - Services" />
 				<div className="services">
 					<div className="pageHeader">
 						<p className="p1">Don't settle for just a website.</p>

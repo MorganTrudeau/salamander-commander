@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HelmetWrapper from "./HelmetWrapper";
+import { Helmet } from "react-helmet";
 import "../App.css";
 
 var Button = require("react-bootstrap/lib/Button");
@@ -12,12 +12,7 @@ class About extends Component {
 	render() {
 		return (
 			<div>
-				<HelmetWrapper
-					title={"Salamander Commander Web Design - About Us"}
-					description={
-						"Based in Vancouver, Salamander Commander is dedicated to providing quality websites that build businesses."
-					}
-				/>
+				<Helmet title="Salamander Commander Web Design and Development - About Us" />
 				<div className="about">
 					<div className="pageHeader">
 						<p className="p1">

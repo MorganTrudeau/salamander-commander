@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import HelmetWrapper from "./HelmetWrapper";
 import "../App.css";
 import { Link } from "react-router-dom";
 import platforms from "../images/salamander-commander-website-design-platforms.png";
 import stars from "../images/salamander-commander-website-design-stars.jpg";
+import { Helmet } from "react-helmet";
 
 var Button = require("react-bootstrap/lib/Button");
 
@@ -15,12 +15,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<HelmetWrapper
-					title={"Salamander Commander Web Design and Development"}
-					description={
-						"Web Design & Development for the Vancouver area. Responsive Websites, E-Commerce, and Logos. Get A Quote!"
-					}
-				/>
+				<Helmet title="Salamander Commander Web Design and Development" />
 				<div className="home">
 					<div
 						className="homeCell0 parallax"

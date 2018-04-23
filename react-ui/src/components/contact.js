@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HelmetWrapper from "./HelmetWrapper";
+import { Helmet } from "react-helmet";
 import "../App.css";
 import emailIcon from "../images/salamander-commander-website-design-email.png";
 import phoneIcon from "../images/salamander-commander-website-design-phone.png";
@@ -67,12 +67,7 @@ class Contact extends Component {
 	render() {
 		return (
 			<div>
-				<HelmetWrapper
-					title={"Salamander Commander Web Design - Contact Us"}
-					description={
-						"Interested in owning a website for your business? Contact us for a free quote."
-					}
-				/>
+				<Helmet title="Salamander Commander Web Design and Development - Contact" />
 				<div className="contact">
 					<div className="contactInfo">
 						<div className="contactCell email">

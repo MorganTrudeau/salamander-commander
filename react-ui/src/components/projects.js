@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HelmetWrapper from "./HelmetWrapper";
+import { Helmet } from "react-helmet";
 import "../App.css";
 import lynxWeb from "../images/salamander-commander-website-design-projects-construction-1.png";
 import hsmWeb from "../images/salamander-commander-website-design-projects-construction-2.png";
@@ -15,14 +15,7 @@ class Projects extends Component {
 	render() {
 		return (
 			<div>
-				<HelmetWrapper
-					title={
-						"Salamander Commander Web Design and Development - Projects"
-					}
-					description={
-						"Profit from online customers with an effective website designed by Salamander Commander. Check out our work."
-					}
-				/>
+				<Helmet title="Salamander Commander Web Design and Development - Projects" />
 				<div className="projects">
 					<div className="pageHeader">
 						<p className="p1">Make a good first impression.</p>
