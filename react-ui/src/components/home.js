@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import platforms from "../images/salamander-commander-website-design-platforms.png";
 import stars from "../images/salamander-commander-website-design-stars.jpg";
 import { Helmet } from "react-helmet";
+import lynx from "../images/salamander-commander-website-design-projects-construction-1.png";
+import hsm from "../images/salamander-commander-website-design-projects-construction-2.png";
+import dlm from "../images/salamander-commander-website-design-projects-construction-0.png";
 
 var Button = require("react-bootstrap/lib/Button");
 
@@ -91,6 +94,30 @@ class Home extends Component {
 					</div>
 				</div>
 
+				<div className="homeProjects">
+					<div className="web">
+						<img
+							src={lynx}
+							width="100%"
+							alt="salamander-commander-website-design-projects-construction"
+						/>
+					</div>
+					<div className="web">
+						<img
+							src={dlm}
+							width="100%"
+							alt="salamander-commander-website-design-projects-construction"
+						/>
+					</div>
+					<div className="web">
+						<img
+							src={hsm}
+							width="100%"
+							alt="salamander-commander-website-design-projects-construction"
+						/>
+					</div>
+				</div>
+
 				<div className="homeCell2">
 					<p className="p1">WEBSITES THAT</p>
 					<p className="p2">COMMAND ATTENTION</p>
@@ -128,7 +155,7 @@ class Home extends Component {
 
 					<div className="homeCell4-2 gridCol">
 						<div className="header4">
-							<h4>ECOMMERCE STORES</h4>
+							<h4>RESPONSIVE WEB DESIGN</h4>
 						</div>
 						<div className="textBlock">
 							<p>
@@ -145,12 +172,12 @@ class Home extends Component {
 
 					<div className="homeCell4-3 gridCol">
 						<div className="header4">
-							<h4>LOGO DESIGN</h4>
+							<h4>PHOTOGRAPHY</h4>
 						</div>
 						<div className="textBlock">
 							<p>
-								Complete your brand with a graphically designed
-								logo.
+								Modern website with original, professional
+								photography.
 							</p>
 						</div>
 						<div className="buttonDiv">
