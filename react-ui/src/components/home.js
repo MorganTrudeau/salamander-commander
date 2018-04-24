@@ -18,7 +18,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div className="home">
-				<Helmet title="Salamander Commander Web Design and Development" />
+				<Helmet title="Salamander Commander | Web Design and Development" />
 				<div>
 					<div
 						className="cell0 parallax"
