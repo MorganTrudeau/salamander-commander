@@ -282,6 +282,7 @@ h6,
 .nav {
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .navbar {
@@ -290,7 +291,6 @@ h6,
   margin-bottom: 0px;
   text-align: center;
   padding: 0px;
-  min-height: 52px;
 }
 
 .navbar .navbar-nav {
@@ -327,7 +327,8 @@ h6,
 }
 
 .navItems {
-  display: inline-block;
+  margin: 0 auto;
+  width: 700px;
 }
 
 /*
