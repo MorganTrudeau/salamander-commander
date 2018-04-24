@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 import platforms from "../images/salamander-commander-website-design-platforms.jpg";
 import stars from "../images/salamander-commander-website-design-stars.jpg";
 import { Helmet } from "react-helmet";
@@ -40,45 +42,47 @@ class Home extends Component {
 					<div className="headerCell0">
 						<h3>WEBSITES THAT WORK FOR YOU</h3>
 					</div>
+					<Fade bottom>
+						<div className="headerCell1">
+							<div>
+								<h5>SEO Friendly</h5>
+							</div>
+							<div className="textBlock">
+								<p>
+									Search Engine Optimization maximizes
+									visitors - your website will rank high on
+									Google search results.
+								</p>
+							</div>
+						</div>
 
-					<div className="headerCell1">
-						<div>
-							<h5>SEO Friendly</h5>
+						<div className="headerCell2">
+							<div>
+								<h5>Responsive</h5>
+							</div>
+							<div className="textBlock">
+								<p>
+									Responsive web design allows the layout of
+									your website to adapt to any device and
+									screen size. Ensure your website always
+									looks good!
+								</p>
+							</div>
 						</div>
-						<div className="textBlock">
-							<p>
-								Search Engine Optimization maximizes visitors -
-								your website will rank high on Google search
-								results.
-							</p>
-						</div>
-					</div>
 
-					<div className="headerCell2">
-						<div>
-							<h5>Responsive</h5>
+						<div className="headerCell3">
+							<div>
+								<h5>Compelling</h5>
+							</div>
+							<div className="textBlock">
+								<p>
+									High quality graphic design and text reflect
+									the unique excellence of your business and
+									turn visitors into customers.
+								</p>
+							</div>
 						</div>
-						<div className="textBlock">
-							<p>
-								Responsive web design allows the layout of your
-								website to adapt to any device and screen size.
-								Ensure your website always looks good!
-							</p>
-						</div>
-					</div>
-
-					<div className="headerCell3">
-						<div>
-							<h5>Compelling</h5>
-						</div>
-						<div className="textBlock">
-							<p>
-								High quality graphic design and text reflect the
-								unique excellence of your business and turn
-								visitors into customers.
-							</p>
-						</div>
-					</div>
+					</Fade>
 
 					<div className="headerCell4">
 						<Link to="/about">
@@ -118,32 +122,36 @@ class Home extends Component {
 				</div>
 
 				<div className="homeProjects secondaryBGColor">
-					<div className="web">
-						<img
-							src={lynx}
-							width="100%"
-							alt="salamander-commander-website-design-projects-construction"
-						/>
-					</div>
-					<div className="web">
-						<img
-							src={dlm}
-							width="100%"
-							alt="salamander-commander-website-design-projects-construction"
-						/>
-					</div>
-					<div className="web">
-						<img
-							src={hsm}
-							width="100%"
-							alt="salamander-commander-website-design-projects-construction"
-						/>
-					</div>
+					<Fade>
+						<div className="web">
+							<img
+								src={lynx}
+								width="100%"
+								alt="salamander-commander-website-design-projects-construction"
+							/>
+						</div>
+						<div className="web">
+							<img
+								src={dlm}
+								width="100%"
+								alt="salamander-commander-website-design-projects-construction"
+							/>
+						</div>
+						<div className="web">
+							<img
+								src={hsm}
+								width="100%"
+								alt="salamander-commander-website-design-projects-construction"
+							/>
+						</div>
+					</Fade>
 				</div>
 
 				<div className="homeCell2">
-					<p className="p1">WEBSITES THAT</p>
-					<p className="p2">COMMAND ATTENTION</p>
+					<Zoom>
+						<p className="p1">WEBSITES THAT</p>
+						<p className="p2">COMMAND ATTENTION</p>
+					</Zoom>
 				</div>
 
 				<div className="homeCell2-1">
@@ -160,71 +168,88 @@ class Home extends Component {
 
 				<div className="homeCell4">
 					<div className="homeCell4-1 gridCol">
-						<div className="header4">
-							<h4>SINGLE PAGE APPLICATIONS</h4>
-						</div>
-						<div className="textBlock">
-							<p>
-								We use the lastest technology in web development
-								to build the fastest websites on the internet
-							</p>
-						</div>
-						<div className="buttonDiv">
-							<Link to="/services">
-								<Button className="button">LEARN MORE</Button>
-							</Link>
-						</div>
+						<Fade bottom>
+							<div className="header4">
+								<h4>SINGLE PAGE APPLICATIONS</h4>
+							</div>
+							<div className="textBlock">
+								<p>
+									We use the lastest technology in web
+									development to build the fastest websites on
+									the internet
+								</p>
+							</div>
+							<div className="buttonDiv">
+								<Link to="/services">
+									<Button className="button">
+										LEARN MORE
+									</Button>
+								</Link>
+							</div>
+						</Fade>
 					</div>
 
 					<div className="homeCell4-2 gridCol">
-						<div className="header4">
-							<h4>RESPONSIVE WEB DESIGN</h4>
-						</div>
-						<div className="textBlock">
-							<p>
-								Making sure you your website can support every
-								device on the market.
-							</p>
-						</div>
-						<div className="buttonDiv">
-							<Link to="/services">
-								<Button className="button">LEARN MORE</Button>
-							</Link>
-						</div>
+						<Fade bottom>
+							<div className="header4">
+								<h4>RESPONSIVE WEB DESIGN</h4>
+							</div>
+							<div className="textBlock">
+								<p>
+									Making sure you your website can support
+									every device on the market.
+								</p>
+							</div>
+							<div className="buttonDiv">
+								<Link to="/services">
+									<Button className="button">
+										LEARN MORE
+									</Button>
+								</Link>
+							</div>
+						</Fade>
 					</div>
 
 					<div className="homeCell4-3 gridCol">
-						<div className="header4">
-							<h4>PHOTOGRAPHY</h4>
-						</div>
-						<div className="textBlock">
-							<p>
-								Modern websites with original, professional
-								photography.
-							</p>
-						</div>
-						<div className="buttonDiv">
-							<Link to="/services">
-								<Button className="button">LEARN MORE</Button>
-							</Link>
-						</div>
+						<Fade bottom>
+							<div className="header4">
+								<h4>PHOTOGRAPHY</h4>
+							</div>
+							<div className="textBlock">
+								<p>
+									Modern websites with original, professional
+									photography.
+								</p>
+							</div>
+							<div className="buttonDiv">
+								<Link to="/services">
+									<Button className="button">
+										LEARN MORE
+									</Button>
+								</Link>
+							</div>
+						</Fade>
 					</div>
 
 					<div className="homeCell4-4 gridCol">
-						<div className="header4">
-							<h4>SEARCH ENGINE OPTIMIZATION</h4>
-						</div>
-						<div className="textBlock">
-							<p>
-								Get your website seen on google with cutting
-								edge SEO.
-							</p>
-						</div>
-						<div className="buttonDiv">
-							<Link to="/services">
-								<Button className="button">LEARN MORE</Button>
-							</Link>
-						</div>
+						<Fade bottom>
+							<div className="header4">
+								<h4>SEARCH ENGINE OPTIMIZATION</h4>
+							</div>
+							<div className="textBlock">
+								<p>
+									Get your website seen on google with cutting
+									edge SEO.
+								</p>
+							</div>
+							<div className="buttonDiv">
+								<Link to="/services">
+									<Button className="button">
+										LEARN MORE
+									</Button>
+								</Link>
+							</div>
+						</Fade>
 					</div>
 				</div>
 			</div>
