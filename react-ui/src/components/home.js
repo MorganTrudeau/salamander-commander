@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import platforms from "../images/salamander-commander-website-design-platforms.png";
 import stars from "../images/salamander-commander-website-design-stars.jpg";
 import { Helmet } from "react-helmet";
-import lynx from "../images/salamander-commander-website-design-projects-construction-1.png";
-import hsm from "../images/salamander-commander-website-design-projects-construction-2.png";
-import dlm from "../images/salamander-commander-website-design-projects-construction-0.png";
+import lynx from "../images/salamander-commander-website-design-projects-construction-1-500x311.png";
+import hsm from "../images/salamander-commander-website-design-projects-construction-2-500x311.png";
+import dlm from "../images/salamander-commander-website-design-projects-construction-0-500x311.png";
 
 var Button = require("react-bootstrap/lib/Button");
 

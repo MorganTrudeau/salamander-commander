@@ -409,6 +409,10 @@ h6,
   padding: 30px 0px;
 }
 
+.home .web {
+  max-width: 500px;
+}
+
 .headerCell3 {
   display: table-cell;
   text-align: center;
@@ -740,6 +744,7 @@ h6,
 
 .web {
   width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 50px;
   box-shadow: 0px 10px 30px 0px #888888;
