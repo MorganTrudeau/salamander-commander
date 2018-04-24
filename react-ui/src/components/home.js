@@ -17,11 +17,11 @@ class Home extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="home">
 				<Helmet title="Salamander Commander Web Design and Development" />
-				<div className="home">
+				<div>
 					<div
-						className="homeCell0 parallax"
+						className="cell0 parallax"
 						style={{ backgroundImage: `url(${stars})` }}
 					>
 						<div className="smoke">
@@ -35,14 +35,15 @@ class Home extends Component {
 						</div>
 					</div>
 				</div>
+
 				<div className="homeHeader">
 					<div className="headerCell0">
-						<p>WEBSITES THAT WORK FOR YOU</p>
+						<h3>WEBSITES THAT WORK FOR YOU</h3>
 					</div>
 
 					<div className="headerCell1">
-						<div className="title">
-							<h6>SEO Friendly</h6>
+						<div>
+							<h5>SEO Friendly</h5>
 						</div>
 						<div className="textBlock">
 							<p>
@@ -54,8 +55,8 @@ class Home extends Component {
 					</div>
 
 					<div className="headerCell2">
-						<div className="title">
-							<h6>Responsive</h6>
+						<div>
+							<h5>Responsive</h5>
 						</div>
 						<div className="textBlock">
 							<p>
@@ -67,8 +68,8 @@ class Home extends Component {
 					</div>
 
 					<div className="headerCell3">
-						<div className="title">
-							<h6>Compelling</h6>
+						<div>
+							<h5>Compelling</h5>
 						</div>
 						<div className="textBlock">
 							<p>
@@ -94,7 +95,29 @@ class Home extends Component {
 					</div>
 				</div>
 
-				<div className="homeProjects">
+				<div className="cell1 text-row secondaryBGColor">
+					<div className="heading">
+						<h3>Web Design & Development</h3>
+					</div>
+					<div className="text">
+						<div className="text">
+							<h5>
+								Providing the best webstites for the Lower
+								Mainland.
+							</h5>
+							<p>
+								We can get your business noticed online. Prouldy
+								serving the Lower Mainland with powerful online
+								marketing that effectively generates customers.
+								Our expertise in web design and development
+								ensure you will receive a modern website that
+								provides results.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div className="homeProjects secondaryBGColor">
 					<div className="web">
 						<img
 							src={lynx}

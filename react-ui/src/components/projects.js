@@ -62,6 +62,10 @@ class Projects extends Component {
 							</Button>
 						</div>
 					</div>
+					<div className="contactBanner whiteText centerText">
+						<h3>We would love to hear from you</h3>
+						<Button className="whiteButton">Contact US</Button>
+					</div>
 				</div>
 			</div>
 		);

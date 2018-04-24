@@ -1,7 +1,8 @@
 /* responsive text display with title on left */
 
 .text-row .heading {
-  padding: 0px 15px;
+  text-align: center;
+  padding: 0px 20px;
 }
 
 .text-row .heading h3 {
@@ -9,7 +10,6 @@
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: solid 4px #8000ff;
-  width: 198px;
   font-family: BebasNeueBold, sans-serif !important;
 }
 
@@ -27,7 +27,32 @@
   text-align: center;
 }
 
-/* general */
+/* contact header */
+
+.contactBanner {
+  background-color: #6600cc;
+  height: 200px;
+}
+
+.contactBanner h3 {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+/* 
+  general 
+*/
+
+.textBlock {
+  margin-top: 25px;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .grid {
   display: grid;
@@ -46,6 +71,50 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.primaryBGColor {
+  background-color: #8000ff;
+}
+
+.secondaryBGColor {
+  background-color: #edebff;
+}
+
+.tertiaryBGColor {
+  background-color: #6600cc;
+}
+
+.button {
+  background-color: #8000ff;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.button:hover {
+  background-color: #9933ff;
+  color: #ffffff;
+}
+
+.button:focus {
+  background-color: #8000ff;
+  color: #ffffff;
+}
+
+.whiteButton {
+  background-color: white;
+  color: #8000ff;
+  margin: 0 auto;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.whiteButton:hover {
+  background-color: #8000ff;
+  color: white;
+  border-color: #8000ff;
 }
 
 h1,
@@ -265,23 +334,7 @@ h6,
   Home
 */
 
-.parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.home {
-  background-size: 130%;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  font-family: Montserrat, arial, sans-serif;
-}
-
-.homeCell0 {
+.home .cell0 {
   width: 100%;
   text-align: center;
   padding: 60px;
@@ -289,7 +342,7 @@ h6,
   color: white;
 }
 
-.homeCell0 p {
+.home .cell0 p {
   font-weight: 600;
   font-size: 35px;
   color: white;
@@ -297,7 +350,7 @@ h6,
   margin-bottom: 2px;
 }
 
-.homeCell0 .button {
+.home .cell0 .button {
   background-color: rgba(77, 77, 77, 0.3);
   border-width: 6px;
   border-color: white;
@@ -309,12 +362,16 @@ h6,
   font-weight: 700;
 }
 
-.homeCell0 .button:hover {
+.home .cell0 .button:hover {
   background-color: rgba(128, 0, 255, 0.5);
 }
 
+.home .cell1 {
+  padding-top: 40px;
+}
+
 .homeHeader {
-  padding: 20px;
+  padding: 30px 20px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -323,12 +380,9 @@ h6,
   width: 100%;
   display: inline-block;
   text-align: center;
-  font-size: 30px;
-  letter-spacing: 2px;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   color: #8000ff;
-  letter-spacing: 3px;
 }
 
 .headerCell1 {
@@ -352,7 +406,7 @@ h6,
 }
 
 .homeProjects {
-  padding-bottom: 30px;
+  padding: 30px 0px;
 }
 
 .headerCell3 {
@@ -365,7 +419,7 @@ h6,
 
 .headerCell4 {
   text-align: center;
-  padding: 40px 10px 20px 10px;
+  padding: 40px 10px 40px 10px;
 }
 
 .headerCell4 .button1 {
@@ -573,26 +627,17 @@ h6,
 }
 
 .about .cell0 {
-  padding: 40px 20px;
+  padding: 40px 20px 20px 20px;
   background-color: white;
 }
 
-.about .cell1 {
-  margin: 0 auto;
-}
-
-.about .cell1 {
-  padding: 0px 0px 80px 0px;
-  text-align: center;
-}
-
-.about .cell1 img {
-  width: 95%;
-}
-
 .about .cell2 {
-  padding: 40px 20px 0px 20px;
+  padding: 60px 20px 20px 20px;
   background-color: #edebff;
+}
+
+.about .text-row .heading h3 {
+  width: 198px;
 }
 
 .about .cell3 {
@@ -654,6 +699,16 @@ h6,
   background-color: white;
 }
 
+.services .cell3 {
+  background-color: #6600cc;
+  height: 200px;
+}
+
+.services .cell3 h3 {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
 /*
   Projects
 */
@@ -661,7 +716,6 @@ h6,
 .projects {
   background-color: white;
   text-align: center;
-  padding-bottom: 40px;
 }
 
 .projectButtons {
@@ -687,10 +741,8 @@ h6,
 .web {
   width: 90%;
   margin: 0 auto;
-  margin-top: 50px;
   margin-bottom: 50px;
   box-shadow: 0px 10px 30px 0px #888888;
-  text-align: center;
 }
 
 /*
@@ -760,12 +812,7 @@ h6,
   margin-bottom: 40px;
 }
 
-.nameInput {
-  margin-bottom: 20px;
-  width: 250px;
-}
-
-.emailInput {
+.input {
   margin-bottom: 20px;
   width: 250px;
 }
@@ -773,38 +820,6 @@ h6,
 .textArea {
   margin-bottom: 20px;
   height: 300px;
-}
-
-.button {
-  background-color: #8000ff;
-  color: #ffffff;
-  margin: 0 auto;
-}
-
-.button:hover {
-  background-color: #9933ff;
-  color: #ffffff;
-}
-
-.button:focus {
-  background-color: #8000ff;
-  color: #ffffff;
-}
-
-.whiteButton {
-  background-color: white;
-  color: #8000ff;
-  margin: 0 auto;
-  -webkit-transition: background-color 0.3s ease-out;
-  -moz-transition: background-color 0.3s ease-out;
-  -o-transition: background-color 0.3s ease-out;
-  transition: background-color 0.3s ease-out;
-}
-
-.whiteButton:hover {
-  background-color: #8000ff;
-  color: white;
-  border-color: #8000ff;
 }
 
 .btn:active:focus {
@@ -867,13 +882,13 @@ h6,
 }
 
 @media screen and (max-width: 550px) {
-  .homeCell0 {
+  .home .cell0 {
     width: 100%;
     text-align: center;
     padding: 60px 5px 60px 5px;
   }
 
-  .homeCell0 p {
+  .home .cell0 p {
     font-weight: 600;
     font-size: 4vw;
     color: white;
@@ -881,7 +896,7 @@ h6,
     margin-bottom: 2px;
   }
 
-  .homeCell0 .button {
+  .home .cell0 .button {
     border-width: 4px;
     width: 85%;
     font-size: 4.7vw;
@@ -1001,13 +1016,13 @@ h6,
 }
 
 @media only screen and (max-width: 863px) and (min-width: 550px) {
-  .homeCell0 {
+  .home .cell0 {
     width: 100%;
     text-align: center;
     padding: 60px 5px 60px 5px;
   }
 
-  .homeCell0 p {
+  .home .cell0 p {
     font-weight: 600;
     font-size: 4vw;
     color: white;
@@ -1015,7 +1030,7 @@ h6,
     margin-bottom: 2px;
   }
 
-  .homeCell0 .button {
+  .home .cell0 .button {
     border-width: 4px;
     width: 75%;
     height: 100%;
@@ -1041,6 +1056,11 @@ h6,
   .text-row {
     display: grid;
     grid-template-columns: 1.5fr 3fr;
+  }
+
+  .home .text-row {
+    display: grid;
+    grid-template-columns: 2fr 3fr !important;
   }
 
   .col2 {

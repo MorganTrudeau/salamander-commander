@@ -23,15 +23,16 @@ router.post("/", function(req, res, next) {
     });
 
     const emailBody = req.body;
-    const senderName = emailBody.name;
-    const senderEmail = emailBody.email;
+    const name = emailBody.name;
+    const email = emailBody.email;
+    const phone = emailBody.phone;
     const message = emailBody.message;
 
     const mailOptions = {
         from: '"The Salamander Commander 👻" <salcombot@gmail.com>', // sender address
         to: "salcomwebdesign@gmail.com", // list of receivers
         subject: "Job Request", // Subject line
-        html: `<p>${senderName}</p></br><p>${senderEmail}</p></br><p>${message}</p>` // html body
+        html: `<p>Name: ${name}</p></br><p>Email: ${email}</p></br><p>Phone: ${phone}</p></br><p>${message}</p>` // html body
     };
 
     transporter.sendMail(mailOptions, function(err, res) {

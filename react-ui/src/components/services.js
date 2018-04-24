@@ -6,6 +6,8 @@ import googleIcon from "../images/salamander-commander-seo-search-engine-optimiz
 import cameraIcon from "../images/salamander-commander-website-design-professional-photography.png";
 import react from "../images/salamander-commander-ecommerce-website-design-react.png";
 
+var Button = require("react-bootstrap/lib/Button");
+
 class Services extends Component {
 	componentWillMount() {
 		window.scrollTo(0, 0);
@@ -114,6 +116,10 @@ class Services extends Component {
 								</p>
 							</div>
 						</div>
+					</div>
+					<div className="cell3 whiteText centerText primaryBGColor">
+						<h3>We would love to hear from you</h3>
+						<Button className="whiteButton">Contact US</Button>
 					</div>
 				</div>
 			</div>

@@ -38,7 +38,7 @@ function validateForm(name, email) {
 class Contact extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { name: "", email: "", message: "" };
+		this.state = { name: "", email: "", phone: "", message: "" };
 
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -56,11 +56,12 @@ class Contact extends Component {
 		event.preventDefault();
 		const name = this.state.name;
 		const email = this.state.email;
+		const phone = this.state.phone;
 		const message = this.state.message;
 
 		if (validateForm(name, email)) {
 			alert("Thank you. We will respond as soon as possible");
-			sendEmail(name, email, message);
+			sendEmail(name, email, phone, message);
 		}
 	}
 
@@ -104,47 +105,35 @@ class Contact extends Component {
 					<div className="messageForm">
 						<form className="form" onSubmit={this.handleSubmit}>
 							<FormControl
-								className="nameInput"
+								className="input"
 								type="text"
 								name="name"
 								value={this.state.name}
-								placeholder="Name"
+								placeholder="Name*"
 								onChange={this.handleChange}
 							/>
 							<FormControl
-								className="emailInput"
+								className="input"
 								type="email"
 								name="email"
 								value={this.state.email}
-								placeholder="Email"
+								placeholder="Email*"
 								onChange={this.handleChange}
 							/>
-							<p style={{ textAlign: "left", marginTop: "30px" }}>
-								Please include the following in the "Additional
-								Details" section.
-							</p>
-							<ul
-								style={{
-									textAlign: "left",
-									marginBottom: "30px"
-								}}
-							>
-								<li>
-									Type of website eg. Construction, Design,
-									Blog etc.
-								</li>
-								<li>Approximate budget</li>
-								<li>
-									Any questions you have about the web design
-									process
-								</li>
-							</ul>
+							<FormControl
+								className="input"
+								type="phone"
+								name="phone"
+								value={this.state.phone}
+								placeholder="Phone"
+								onChange={this.handleChange}
+							/>
 							<FormControl
 								className="textArea"
 								componentClass="textarea"
 								name="message"
 								value={this.state.message}
-								placeholder="Additional Details"
+								placeholder="Message"
 								onChange={this.handleChange}
 								rows={5}
 							/>
