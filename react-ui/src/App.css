@@ -521,6 +521,7 @@ h6,
 .homeCell2-1 img {
   margin: 0 auto;
   width: 70%;
+  max-width: 1000px;
 }
 
 .homeCell3 {

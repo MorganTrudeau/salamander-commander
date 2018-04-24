@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
-import platforms from "../images/salamander-commander-website-design-platforms.png";
+import platforms from "../images/salamander-commander-website-design-platforms.jpg";
 import stars from "../images/salamander-commander-website-design-stars.jpg";
 import { Helmet } from "react-helmet";
 import lynx from "../images/salamander-commander-website-design-projects-construction-1-500x311.png";
