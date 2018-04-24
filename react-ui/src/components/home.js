@@ -159,8 +159,8 @@ class Home extends Component {
 						</div>
 						<div className="textBlock">
 							<p>
-								We can build an effective and secure platform to
-								sell your products
+								Making sure you your website can support every
+								device on the market.
 							</p>
 						</div>
 						<div className="buttonDiv">
@@ -176,7 +176,7 @@ class Home extends Component {
 						</div>
 						<div className="textBlock">
 							<p>
-								Modern website with original, professional
+								Modern websites with original, professional
 								photography.
 							</p>
 						</div>
