@@ -14,8 +14,12 @@ const emailRoute = require("./routes/email");
 // Priority serve any static files.
 app.use(express.static(path.resolve(__dirname, "./react-ui/build")));
 
-app.get("/site-map.xml", function(request, response) {
-	response.sendFile(path.resolve(__dirname, "site-map.xml"));
+app.get("/http-site-map.xml", function(request, response) {
+	response.sendFile(path.resolve(__dirname, "http-site-map.xml"));
+});
+
+app.get("/https-site-map.xml", function(request, response) {
+	response.sendFile(path.resolve(__dirname, "https-site-map.xml"));
 });
 
 // All remaining requests return the React app, so it can handle routing.
