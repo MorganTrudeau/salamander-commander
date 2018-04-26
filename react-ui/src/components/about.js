@@ -27,7 +27,7 @@ class About extends Component {
 							<div className="heading">
 								<h3>Who We Are</h3>
 							</div>
-							<div className="textBlock">
+							<div className="text">
 								<h5>
 									Passionate programmers dedicated to helping
 									businesses take advatage of the online
