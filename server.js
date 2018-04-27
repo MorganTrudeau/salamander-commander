@@ -22,21 +22,6 @@ app.get("/https-site-map.xml", function(request, response) {
 	response.sendFile(path.resolve(__dirname, "https-site-map.xml"));
 });
 
-app.get("/banner-img", function(request, response) {
-	response.sendFile(
-		path.resolve(__dirname, "./salamander-commander-banner.jpg")
-	);
-});
-
-app.get("/platforms-img", function(request, response) {
-	response.sendFile(
-		path.resolve(
-			__dirname,
-			"./salamander-commander-website-design-platforms.jpg"
-		)
-	);
-});
-
 // All remaining requests return the React app, so it can handle routing.
 app.get("*", function(request, response) {
 	response.sendFile(
