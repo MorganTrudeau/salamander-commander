@@ -114,7 +114,7 @@ class Home extends Component {
 								serving the Lower Mainland with powerful online
 								marketing that effectively generates customers.
 								Our expertise in web design and development
-								ensure you will receive a modern website that
+								ensures you will receive a modern website that
 								provides results.
 							</p>
 						</div>
