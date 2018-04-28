@@ -328,7 +328,6 @@ h6,
 
 .navItems {
   margin: 0 auto;
-  width: 700px;
 }
 
 /*
@@ -1053,6 +1052,10 @@ h6,
 @media only screen and (min-width: 768px) {
   .form {
     width: 750px;
+  }
+
+  .navItems {
+    width: 768px;
   }
 
   .homeCell4 {
