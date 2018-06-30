@@ -44,49 +44,4 @@ router.post("/", function(req, res, next) {
     });
 });
 
-// // Create new applicant and application
-// router.post("/", function(req, res, next) {
-//     const emailBody = req.body;
-//     const senderName = emailBody.name;
-//     const senderEmail = emailBody.email;
-//     const message = emailBody.message;
-
-//     ("use strict");
-//     const nodemailer = require("nodemailer");
-
-//     // Generate test SMTP service account from ethereal.email
-//     // Only needed if you don't have a real mail account for testing
-//     nodemailer.createTransport({
-
-//         const transporter = nodemailer.createTransport({
-//             service: "gmail",
-//             auth: {
-//                 user: "salcomwebdesign@gmail.com",
-//                 pass: "Lollipop0+"
-//             }
-//         });
-
-//         // setup email data with unicode symbols
-//         let mailOptions = {
-//             from: '"The Salamander Commander 👻" <salcomwebdesign@gmail.com>', // sender address
-//             to: "salcomwebdesign@gmail.com", // list of receivers
-//             subject: "Job Request", // Subject line
-//             html: `<p>${senderName}</p></br><p>${senderEmail}</p></br><p>${message}</p>` // html body
-//         };
-
-//         // send mail with defined transport object
-//         transporter.sendMail(mailOptions, (error, info) => {
-//             if (error) {
-//                 return console.log(error);
-//             }
-//             console.log("Message sent: %s", info.messageId);
-//             // Preview only available when sending through an Ethereal account
-//             console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-
-//             // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-//             // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-//         });
-//     });
-// });
-
 module.exports = router;

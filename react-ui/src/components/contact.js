@@ -8,7 +8,7 @@ import pinIcon from "../images/salamander-commander-website-design-location.png"
 var FormControl = require("react-bootstrap/lib/FormControl");
 var Button = require("react-bootstrap/lib/Button");
 
-function sendEmail(name, email, message) {
+function sendEmail(name, email, phone, message) {
 	try {
 		fetch("email", {
 			method: "POST",
@@ -19,6 +19,7 @@ function sendEmail(name, email, message) {
 			body: JSON.stringify({
 				name: name,
 				email: email,
+				phone: phone,
 				message: message
 			})
 		});
