@@ -30,7 +30,7 @@ class About extends Component {
 							<div className="text">
 								<h5>
 									Passionate programmers dedicated to helping
-									businesses take advatage of the online
+									businesses take advantage of the online
 									marketplace.
 								</h5>
 								<p>
