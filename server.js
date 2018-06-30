@@ -19,51 +19,7 @@ app.get("/https-site-map.xml", function(request, response) {
 	response.sendFile(path.resolve(__dirname, "https-site-map.xml"));
 });
 
-// app.use("/email/", emailRoute);
-
-var bodyParser = require("body-parser");
-("use strict");
-const nodemailer = require("nodemailer");
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-
-// Console.log req info
-app.use(function(req, res, next) {
-	console.log(`Request body: ${JSON.stringify(req.body)}'`);
-	next();
-});
-
-app.post("/email", function(req, res, next) {
-	const transporter = nodemailer.createTransport({
-		service: "gmail",
-		auth: {
-			user: "salcombot@gmail.com",
-			pass: "Gummiworm0+"
-		}
-	});
-
-	const emailBody = req.body;
-	const name = emailBody.name;
-	const email = emailBody.email;
-	const phone = emailBody.phone;
-	const message = emailBody.message;
-
-	const mailOptions = {
-		from: '"The Salamander Commander 👻" <salcombot@gmail.com>', // sender address
-		to: "salcomwebdesign@gmail.com", // list of receivers
-		subject: "Job Request", // Subject line
-		html: `<p>Name: ${name}</p></br><p>Email: ${email}</p></br><p>Phone: ${phone}</p></br><p>${message}</p>` // html body
-	};
-
-	transporter.sendMail(mailOptions, function(err, res) {
-		if (err) {
-			console.error("there was an error: ", err);
-		} else {
-			console.log("here is the res: ", res);
-		}
-	});
-});
+app.use("/email/", emailRoute);
 
 // Priority serve any static files.
 app.use(express.static(path.resolve(__dirname, "./react-ui/build")));
