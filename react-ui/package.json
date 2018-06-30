@@ -20,5 +20,5 @@
     "eject": "react-scripts eject"
   },
   "proxy": "http://localhost:5000",
-  "homepage": "https://salamandercommander.ca"
+  "homepage": "https://salamander-commander.herokuapp.com/"
 }
