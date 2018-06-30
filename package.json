@@ -23,6 +23,5 @@
   },
   "keywords": ["node", "heroku", "create-react-app", "react"],
   "license": "MIT",
-  "devDependencies": {},
-  "homepage": "/"
+  "devDependencies": {}
 }
