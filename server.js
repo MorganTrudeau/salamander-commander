@@ -22,6 +22,8 @@ app.get("/https-site-map.xml", function(request, response) {
 	response.sendFile(path.resolve(__dirname, "https-site-map.xml"));
 });
 
+app.use("/email/", emailRoute);
+
 // All remaining requests return the React app, so it can handle routing.
 app.get("*", function(request, response) {
 	response.sendFile(
@@ -32,5 +34,3 @@ app.get("*", function(request, response) {
 app.listen(PORT, function() {
 	console.error(`Listening on port ${PORT}`);
 });
-
-app.use("/email/", emailRoute);
